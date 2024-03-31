@@ -1,0 +1,53 @@
+/*-------------menu begin-------------*/
+
+.menu-inside
+{
+    position: relative;
+    z-index: 3;
+}
+.menu-inside ion-icon
+{
+    color: white;
+    font-size: 2.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+.new-menu
+{
+    position: absolute;
+    top: -100%;
+    left: -100%;
+}
+.menu.active .new-menu
+{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0c0c0c;
+    z-index: 2;
+}
+.link
+{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 50px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s ease-out;
+}
+
+.menu.active .link
+{
+    top: 50%;
+}
+
+.link a
+{
+    font-size: 2.8rem;
+    width: 100%;
+    box-shadow: unset;
+    text-align: center;
+}
